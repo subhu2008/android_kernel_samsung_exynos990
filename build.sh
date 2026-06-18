@@ -158,7 +158,7 @@ else
 fi
 echo "Generating configuration file..."
 echo "-----------------------------------------------"
-make ${MAKE_ARGS} -j$CORES exynos9830_defconfig $MODEL.config droidspaces.config $KSU $RECOVERY || abort
+make ${MAKE_ARGS} -j$CORES exynos9830_defconfig $MODEL.config droidspaces.config nuke.config $KSU $RECOVERY || abort
 
 if [ ! -z "$DTBS" ]; then
     MAKE_ARGS="$MAKE_ARGS dtbs"
